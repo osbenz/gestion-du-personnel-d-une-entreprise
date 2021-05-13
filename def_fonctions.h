@@ -31,10 +31,11 @@ typedef struct {
 
 date saisie_date();
 adresse saisie_adresse();
-void ajouter_employe(employe tab[maximum],int n);
+void ajouter_employe(employe tab[maximum],int *n);
 void afficher_employe(employe x, employe tab[maximum], int n);
+void afficher_tous_employes(employe tab[maximum], int n);
 void modifier_employe(employe x, employe tab[maximum], int n);
-void supprimer_employe(employe x, employe tab[maximum], int n);
+void supprimer_employe(employe x, employe tab[maximum], int *n);
 int affichage_menu();
 
 #endif // DEF_FONCTIONS_H_INCLUDED
